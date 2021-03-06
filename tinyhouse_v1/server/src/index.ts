@@ -5,7 +5,7 @@ import {listings} from "./listings";
 const app = express();
 const port = 9000;
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get("/listings", (_req, res) => {
   return res.send(listings);
